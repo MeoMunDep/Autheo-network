@@ -1,1 +1,1 @@
-console.log(`Can i have 50 stars before the launching?`)
+console.log(`Almost there?`)

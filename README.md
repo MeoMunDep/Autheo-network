@@ -1,2 +1,1 @@
-# Autheo-network
-Auto faucet
+https://testnet-faucet.autheo.com/

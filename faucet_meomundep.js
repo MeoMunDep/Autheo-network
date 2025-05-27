@@ -1,1 +1,1 @@
-console.log(`Almost there?`)
+console.log(`30 stars`)

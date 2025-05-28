@@ -2,6 +2,34 @@
 
 This script automates token claiming from the Autheo Network testnet faucet and tx using private keys and optional proxy support. CAPTCHA solving is handled automatically via the 2Captcha service.
 
+---
+
+## 📦 Requirements
+
+Before running the script, make sure you have the following installed:
+
+### ✅ Node.js (v20 or later)
+
+Download from: [https://nodejs.org/en/download](https://nodejs.org/en/download)
+
+### ✅ Git
+
+Download from: [https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+---
+
+## 🧬 Installation
+
+### 1. Clone this repository
+
+Open your terminal (or Command Prompt on Windows) and run:
+
+```bash
+git clone https://github.com/meomundep/autheo-network.git
+cd autheo-network
+```
+---
+
 ## 📁 Project Structure
 
 ```

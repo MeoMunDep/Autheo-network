@@ -1,3 +1,6 @@
 {
-  
+  "faucet": {
+    "maxCaptchaAttempts": 20,
+    "2captchaApiKey": ""
+  }
 }

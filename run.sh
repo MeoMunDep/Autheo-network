@@ -67,9 +67,19 @@ check_git
 create_default_configs() {
     cat > configs.json << EOL
 {
-"faucet": {
+  "faucet": {
     "maxCaptchaAttempts": 20,
     "2captchaApiKey": ""
+  },
+
+  "deployContract": {
+    "enable": true,
+    "amount": [1, 5]
+  },
+
+  "sendToken": {
+    "enable": true,
+    "amount": [1,5]
   }
 }
 EOL
@@ -116,4 +126,5 @@ fi
 
 print_green "Starting the bot..."
 node faucet_meomundep
+
 

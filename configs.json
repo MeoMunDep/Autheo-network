@@ -2,5 +2,15 @@
   "faucet": {
     "maxCaptchaAttempts": 20,
     "2captchaApiKey": ""
+  },
+
+  "deployContract": {
+    "enable": true,
+    "amount": [1, 5]
+  },
+
+  "sendToken": {
+    "enable": true,
+    "amount": [1,5]
   }
 }

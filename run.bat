@@ -20,11 +20,11 @@ echo Checking dependencies...
 if exist "..\node_modules" (
     echo Using node_modules from parent directory...
     cd ..
-    CALL npm install --no-audit --no-fund --prefer-offline --force  user-agents axios meo-forkcy-colors https-proxy-agent socks-proxy-agent ethers 
+    CALL npm install --no-audit --no-fund --prefer-offline --force  user-agents axios meo-forkcy-colors meo-forkcy-logger meo-forkcy-utils ethers 
     cd %~dp0
 ) else (
     echo Installing dependencies in current directory...
-    CALL npm install --no-audit --no-fund --prefer-offline --force  user-agents axios meo-forkcy-colors https-proxy-agent socks-proxy-agent ethers 
+    CALL npm install --no-audit --no-fund --prefer-offline --force  user-agents axios meo-forkcy-colors meo-forkcy-logger meo-forkcy-utils ethers 
 )
 echo Dependencies installation completed!
 
@@ -37,3 +37,4 @@ node faucet_meomundep
 
 pause
 exit
+

@@ -53,9 +53,33 @@ Create a `configs.json` file with the following structure:
 
 ```json
 {
+  "proxyMode": "static",
+  "skipInvalidProxy": false,
+  "delayEachAccount": [1, 1],
+  "timeToRestartAllAccounts": 300,
+  "howManyAccountsRunInOneTime": 1,
+
   "faucet": {
-    "2captchaApiKey": "YOUR_2CAPTCHA_API_KEY",
-    "maxCaptchaAttempts": 5
+    "enable": true,
+    "maxCaptchaAttempts": 20,
+    "2captchaApiKey": ""
+  },
+
+  "deployToken": {
+    "enable": true,
+    "amount": [1, 3],
+    "transferTokens": true
+  },
+
+  "deployNFT": {
+    "enable": true,
+    "amount": [1, 3],
+    "transferNFTs": true
+  },
+
+  "transferNativeTokens": {
+    "enable": false,
+    "amount": [0.0001, 0.0003]
   }
 }
 ```

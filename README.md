@@ -79,7 +79,7 @@ Create a `configs.json` file with the following structure:
 
   "transferNativeTokens": {
     "enable": false,
-    "amount": [0.0001, 0.0003]
+    "amount": [1, 3]
   }
 }
 ```

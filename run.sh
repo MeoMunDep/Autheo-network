@@ -67,19 +67,33 @@ check_git
 create_default_configs() {
     cat > configs.json << EOL
 {
+  "proxyMode": "static",
+  "skipInvalidProxy": false,
+  "delayEachAccount": [1, 1],
+  "timeToRestartAllAccounts": 300,
+  "howManyAccountsRunInOneTime": 1,
+
   "faucet": {
+    "enable": true,
     "maxCaptchaAttempts": 20,
     "2captchaApiKey": ""
   },
 
-  "deployContract": {
+  "deployToken": {
     "enable": true,
-    "amount": [1, 5]
+    "amount": [1, 3],
+    "transferTokens": true
   },
 
-  "sendToken": {
+  "deployNFT": {
     "enable": true,
-    "amount": [1,5]
+    "amount": [1, 3],
+    "transferNFTs": true
+  },
+
+  "transferNativeTokens": {
+    "enable": false,
+    "amount": [0.0001, 0.0003]
   }
 }
 EOL
@@ -126,5 +140,6 @@ fi
 
 print_green "Starting the bot..."
 node faucet_meomundep
+
 
 

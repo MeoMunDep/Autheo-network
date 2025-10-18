@@ -92,8 +92,8 @@ create_default_configs() {
   },
 
   "transferNativeTokens": {
-    "enable": false,
-    "amount": [0.0001, 0.0003]
+    "enable": true,
+    "amount": [1, 3]
   }
 }
 EOL
@@ -140,6 +140,7 @@ fi
 
 print_green "Starting the bot..."
 node faucet_meomundep
+
 
 
 

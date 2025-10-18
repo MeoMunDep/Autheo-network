@@ -126,7 +126,7 @@ print_green "Configuration files have been checked."
 
 print_yellow "Checking dependencies..."
 cd "$MODULES_DIR"
-npm install --no-audit --no-fund --prefer-offline --force user-agents axios meo-forkcy-colors meo-forkcy-logger meo-forkcy-utils ethers 
+npm install --no-audit --no-fund --prefer-offline --force user-agents axios meo-forkcy-colors meo-forkcy-logger meo-forkcy-utils ethers solc
 cd - > /dev/null
 print_green "Dependencies installation completed!"
 
@@ -140,6 +140,7 @@ fi
 
 print_green "Starting the bot..."
 node faucet_meomundep
+
 
 
 

@@ -1,1 +1,1 @@
-console.log(`I put the wrong place, LOL`)
+console.log(`Leave this project guys, please choose another scripts!`)
